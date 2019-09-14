@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package demo;
+
+
+service DemoService {
+    rpc DemoHandler (DemoRequest) returns (DemoResponse) {
+    };
+}
+message DemoRequest {
+    string name = 1;
+}
+message DemoResponse {
+    string name = 1;
+}
